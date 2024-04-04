@@ -1,0 +1,79 @@
+.newsletter{
+    display: flex;
+}
+.left-side{
+    
+    width: 100%;
+    padding-left: 90px;
+}
+.right-side{
+    width: 100%;
+    padding-left: 90px;
+}
+.social{
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    cursor: pointer;
+}
+.social-button{
+    margin-left: 5px;
+    background-color: #F9995D;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 90px;
+    border-radius: 3px;
+}
+.input{
+    width: 200px;
+}
+.content-heading{
+    color: #2947A9;
+    margin-top: 20px; 
+    font-weight: bold;
+}
+.l-left-side{
+    width: 50%;
+    display: inline-block;
+}
+.r-l-side{
+    margin-left: -10rem;
+}
+.l-logo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 32px;
+    width: 30;
+    padding-left: 5rem;
+}
+.t-box{
+    color: #2947A9;
+    font-style: italic;
+    font-weight: bold;
+    font-size: large;
+    margin-left: 20px;
+}
+@media(max-width:1231px){
+    .r-l-side{
+        margin-left: -4rem;
+    }
+}
+@media(max-width:778px){
+    .newsletter{
+        display: block;
+    }
+    .l-left-side{
+        width: 100%;
+        display:block;
+    }
+    .r-l-side{
+        margin-left: auto;
+    }
+}
+@media(max-width:1149px){
+    .social-button{
+        margin: 5px;
+    }
+}
+

@@ -1,0 +1,42 @@
+.form{
+    padding: 40px;
+    background: #F6F8F7;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.input-form{
+    margin: 20px;
+    height: 30px;
+    width: 200px;
+}
+#textarea{
+    height: 100px;
+    width: 450px;
+    padding-top: -27px;
+}
+.alert{
+    margin-top: -30px;
+}
+.submitbt{
+    background: #2947A9;
+    padding: 5px;
+    border: none;
+    font-size: small;
+    color: white;
+    width: 150px;
+}
+@media(max-width:573px){
+    .form{
+        display: block;
+    }
+    #textarea{
+        width:200px;
+        height:40px;
+    }
+    .submitbt{
+        margin-left: 3rem;
+    }
+
+}

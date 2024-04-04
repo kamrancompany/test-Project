@@ -1,0 +1,7 @@
+.mainabout{
+    display: flex;
+    position: relative;
+}
+.l-mainabout{
+    position: absolute;
+}

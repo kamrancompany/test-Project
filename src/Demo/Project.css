@@ -1,0 +1,121 @@
+.projectmain {
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.allproject {
+    display: flex;
+}
+
+.allproject>h4 {
+    cursor: pointer;
+}
+
+.sub-con {
+    color: #C2C7D6;
+    cursor: pointer;
+}
+
+.r-projectmain {
+    width: 70%;
+}
+
+.l-projectmain {
+    width: 30%;
+}
+
+.projectcard {
+    border: none;
+    height: 250px;
+}
+
+.projecttitle {
+    background: #2947A9;
+    
+    color: white !important;
+    padding: 10px;
+}
+
+.projectcontent {
+    background: #2947A9;
+    margin-top: -20px;
+    height: 30px;
+    color: white;
+    padding: 10px;
+    font-size: small;
+}
+
+.cardrbody {
+    background-color: #2947A9;
+    color: white;
+}
+
+.projectbutton {
+    background: #292E3D;
+    color: white;
+    height: 44px;
+    width: 21%;
+    margin-bottom: 4rem;
+    padding: 0px;
+}
+
+.buttondiv {
+    display: flex;
+    justify-content: flex-start;
+    gap: 13%;
+    flex-direction: row;
+
+}
+
+#cardid::after {
+    background: #2947A9;
+}
+
+.circlebtn {
+    height: 16px;
+    width: 26px;
+    padding-Left: 15%
+}
+
+@media(max-width:1200px) {
+    
+    .buttondiv {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .projecttitle{
+        font-size: small;
+    }
+}
+
+@media(max-width:770px) {
+    .buttondiv {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .circlebtn {
+        height: 16px;
+        width: 26px;
+        padding-Left:0px;
+    }
+}
+@media(max-width:765px){
+    .circlebtn{
+        display: none;
+    }
+    .projectbutton{
+        
+        height:auto;
+        width: auto;
+    }
+    .buttondiv {
+        display: flex;
+        justify-content: center;
+        padding-left: 2rem;
+        flex-direction: row;
+    
+    }
+}

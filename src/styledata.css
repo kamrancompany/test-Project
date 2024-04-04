@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+.nav {
+  height: 70px;
+  width: 100%;
+  background-color: white;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: black;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:800px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+    margin-top: 10px;
+    
+  }
+  /* .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  } */
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 60px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+
+    
+    /* overflow-y: auto; */
+  }
+}
+
+/* Home Section Start  */
+.pos_banner{
+    position: relative;
+}
+.main_banner{
+    background: url(../src/Pics/banner.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+ 
+.feature_main{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background: #3559C7;
+    text-align: center;
+    color: white;
+}
+.main_text{
+    padding: 50px;
+    /* width: 500px; */
+    position: absolute;
+    top: 200px;
+}
+.main_text h1{
+    font-size: 50px;
+}
+  @media(max-width:990px)
+{
+   
+    .main_text{
+    padding: 50px;
+    position: absolute;
+    top: 200px;
+}
+} 
+  @media(max-width:768px)
+{  
+    .main_text{
+    padding: 50px;
+    position: absolute;
+    top: 100px;
+}
+} 
+  @media(max-width:400px)
+{  
+    .main_text{
+    padding: 50px;
+    position: absolute;
+    top: 50px;
+}
+} 
